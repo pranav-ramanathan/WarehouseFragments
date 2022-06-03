@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Warehouse</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="log_in_otp_button_text">Send OTP</string>
+    <string name="enter_otp_hint">Enter OTP</string>
+    <string name="log_in_otp_button">Log In</string>
+</resources>
