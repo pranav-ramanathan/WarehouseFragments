@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.android.pranav.warehouse1.databinding.LoginFragmentBinding
@@ -15,12 +14,17 @@ class loginFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        binding = DataBindingUtil.inflate<LoginFragmentBinding>(inflater,
-            R.layout.login_fragment,container,false)
+        binding = LoginFragmentBinding.inflate(inflater)
 
-//        binding.otpButton.setOnClickListener { view : View ->
-//            view.findNavController().navigate(R.id.action_loginFragment_to_otpFragment)
-//        }
+        binding.otpButton.setOnClickListener { view : View ->
+            binding.apply {
+                if(phoneInput.text.toString() != ""){
+                    view.findNavController().navigate(R.id.action_loginFragment_to_otpFragment)
+                }
+
+            }
+
+        }
         return binding.root
     }
 

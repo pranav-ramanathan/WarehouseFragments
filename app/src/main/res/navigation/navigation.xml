@@ -3,7 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.android.pranav.warehouse1.welcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/loginFragment"
@@ -13,12 +23,18 @@
         <action
             android:id="@+id/action_loginFragment_to_otpFragment"
             app:destination="@id/otpFragment"
-            app:popUpTo="@id/otpFragment"
+            app:popUpTo="@id/welcomeFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/otpFragment"
         android:name="com.android.pranav.warehouse1.otpFragment"
         android:label="otpFragment"
-        tools:layout="@layout/otp_fragment"/>
+        tools:layout="@layout/otp_fragment">
+        <action
+            android:id="@+id/action_otpFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment" />
+    </fragment>
+
 </navigation>

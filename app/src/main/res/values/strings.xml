@@ -4,4 +4,6 @@
     <string name="log_in_otp_button_text">Send OTP</string>
     <string name="enter_otp_hint">Enter OTP</string>
     <string name="log_in_otp_button">Log In</string>
+    <string name="welcome_text">Welcome to the warehouse</string>
+    <string name="sign_in_button_text">Sign in</string>
 </resources>

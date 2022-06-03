@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "947656987625",
+    "project_id": "warehouse-1-99560",
+    "storage_bucket": "warehouse-1-99560.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947656987625:android:68cee21c846e35f9547178",
+        "android_client_info": {
+          "package_name": "com.android.pranav.warehouse1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947656987625-qrkhrjvu754ag4vs2ud3infeiil8mqol.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.pranav.warehouse1",
+            "certificate_hash": "b35c8c71fabc40e6bde63c3c7e0c51e537498782"
+          }
+        },
+        {
+          "client_id": "947656987625-6rj86ad6l153j82uanpe7101korqkhg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaofLiF4pkPrjL8ORl1gGa4NyQm5S696Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947656987625-6rj86ad6l153j82uanpe7101korqkhg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
