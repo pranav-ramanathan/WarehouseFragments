@@ -10,7 +10,7 @@ import com.android.pranav.warehouse1.databinding.LoginFragmentBinding
 
 class loginFragment : Fragment() {
 
-    lateinit var binding: LoginFragmentBinding
+    private lateinit var binding: LoginFragmentBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {

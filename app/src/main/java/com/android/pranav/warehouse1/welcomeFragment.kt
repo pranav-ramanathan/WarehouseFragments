@@ -9,7 +9,7 @@ import androidx.navigation.findNavController
 import com.android.pranav.warehouse1.databinding.FragmentWelcomeBinding
 
 class welcomeFragment : Fragment() {
-    lateinit var binding: FragmentWelcomeBinding
+    private lateinit var binding: FragmentWelcomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -10,7 +10,7 @@ import androidx.navigation.findNavController
 import com.android.pranav.warehouse1.databinding.OtpFragmentBinding
 
 class otpFragment: Fragment() {
-    lateinit var binding: OtpFragmentBinding
+    private lateinit var binding: OtpFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
